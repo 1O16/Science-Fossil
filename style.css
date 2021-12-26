@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  position: fixed;
+  height: 50px;
+  width: 250px;
+  background: #ddc6b6;
+  transition: 0.5s;
+  z-index: 100000;
+  overflow: hidden;
+}
+
+.nav.active {
+  height: 250px;
+}
+
+.nav .toggle {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #000000;
+  font-size: 30px;
+  background: #ddc6b6;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav .toggle::after {
+  content: "Menu";
+  margin-left: 10px;
+}
+
+.nav .toggle.active::after {
+  content: "Close";
+  margin-left: 10px;
+}
+
+.nav .toggle span {
+  position: relative;
+  width: 20px;
+  height: 50px;
+}
+
+.nav .toggle span::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+}
+
+.nav .toggle span::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+}
+
+.nav .toggle.active span::before {
+  transform: rotate(225deg);
+  top: 24px;
+}
+
+.nav .toggle.active span::after {
+  transform: rotate(135deg);
+  bottom: 24px;
+}
+
+.nav ul {
+  position: relative;
+  background: #262223;
+  width: 260px;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  font-family: "GmarketSansLight", sans-serif;
+  color: #ddc6b6;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  height: 50px;
+  margin-left: 20px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+
+.nav ul li a:hover {
+  transition: 0s;
+  background: #f4efea91;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f5f1ec91;
+}
+
+section #first {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  left: 10px;
+  top: 60px;
+}
+
+section #first1 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 30px;
+  top: 45px;
+}
+
+section #second {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  left: 10px;
+}
+
+section #second2 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 28px;
+  bottom: 15px;
+}
+
+section #create_fossil {
+  width: 450px;
+  height: 350px;
+  position: relative;
+  bottom: 55px;
+  left: 10px;
+}
+
+section #third {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  bottom: 50px;
+  left: 10px;
+}
+
+section #third3 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 28px;
+  bottom: 60px;
+}
+
+section #fourth {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  top: 60px;
+  left: 10px;
+}
+
+section #fourth4 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 28px;
+  top: 50px;
+}
+
+section #trilobites {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+}
+
+section #Archaeopteryx {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section #mammoth {
+  width: 550px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section #fifth {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  top: 60px;
+  left: 10px;
+}
+
+section #fifth5 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 28px;
+  top: 50px;
+}
+
+section #Eastern_brakenfern {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section #coral {
+  width: 500px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section #shell {
+  width: 550px;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  left: 15px;
+}
+
+section #sixth {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 60px;
+  top: 50px;
+  left: 10px;
+}
+
+section #sixth6 {
+  position: relative;
+  font-family: "GmarketSansLight", sans-serif;
+  z-index: 2;
+  font-size: 28px;
+  top: 50px;
+}
